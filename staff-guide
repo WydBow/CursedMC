@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CursedMC Staff Guide</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #34495e;
+      --accent: #e74c3c;
+      --text: #ecf0f1;
+      --background: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--background);
+    }
+
+    .navbar {
+      background: var(--primary);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar h1 {
+      color: var(--text);
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .section {
+      background: var(--secondary);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+    }
+
+    .section h3 {
+      color: var(--text);
+      margin: 1.5rem 0 1rem 0;
+    }
+
+    .punishment-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    .punishment-table th,
+    .punishment-table td {
+      padding: 0.75rem;
+      border: 1px solid var(--primary);
+      text-align: left;
+    }
+
+    .punishment-table th {
+      background: var(--primary);
+      color: var(--text);
+    }
+
+    .punishment-table tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .example {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 1rem;
+      border-left: 4px solid var(--accent);
+      margin: 1rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .legend {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 1rem 0;
+    }
+
+    .legend-item {
+      background: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+
+    ul,
+    ol {
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .warning {
+      background: rgba(231, 76, 60, 0.2);
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1>CursedMC Staff Guide</h1>
+  </nav>
+
+  <div class="container">
+    <div class="section">
+      <h2>Welcome to the CursedMC Staff Team</h2>
+      <p>This guide will help you understand your responsibilities and how to be an effective staff member. As a staff
+        member, you are the face of CursedMC both on and off the server.</p>
+    </div>
+
+    <div class="section">
+      <h2>General Staff Rules</h2>
+      <ul>
+        <li>You may not use your permissions/status to gain an advantage over players & other staff</li>
+        <li>You are not allowed to leak/reveal any sensitive information regarding the staff team</li>
+        <li>Remain professional at all times - you can have fun in the chat but remain sensitive</li>
+        <li>You must use staff chat if speaking to fellow colleagues regarding staff information</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>How to Issue a Punishment</h2>
+      <ol>
+        <li>Collect Evidence - Screenshots, core protect logs, photo evidence, or video recordings</li>
+        <li>View user's history using /history [player]</li>
+        <li>Check punishment guidelines</li>
+        <li>Issue the punishment with the offense attached</li>
+        <li>Submit evidence and fill out the required formats</li>
+      </ol>
+
+      <h3>In-Game Punishment Format</h3>
+      <div class="example">
+        <p>IGN: _nodms</p>
+        <p>Punishment: Ban</p>
+        <p>Length of punishment: 7d</p>
+        <p>Reason: Cheating</p>
+        <p>Offense: 1</p>
+        <p>Evidence: (Video required for cheating)</p>
+      </div>
+
+      <h3>Discord Punishment Format</h3>
+      <div class="example">
+        <p>Discord ID: 1054832891118497832</p>
+        <p>Punishment: Ban</p>
+        <p>Length Of Punishment: Permanent</p>
+        <p>Reason: Doxxing</p>
+        <p>Offense: 1</p>
+        <p>Evidence: (Screenshot required)</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Mute Punishments</h2>
+      <div class="legend">
+        <span class="legend-item">Offense 1</span>
+        <span class="legend-item">Offense 2</span>
+        <span class="legend-item">Offense 3</span>
+        <span class="legend-item">Offense 4</span>
+        <span class="legend-item">Offense 5</span>
+      </div>
+
+      <table class="punishment-table">
+        <tr>
+          <th>Violation</th>
+          <th>Punishment</th>
+        </tr>
+        <tr>
+          <td>Spam, Foreign Languages, Fonts</td>
+          <td>Warning → 1hr → 3hr → 6hr → 1d → Repeat</td>
+        </tr>
+        <tr>
+          <td>Toxicity or Bullying</td>
+          <td>Warning → 6hr → 1d → 3d → 7d → Repeat</td>
+        </tr>
+        <tr>
+          <td>Harassment</td>
+          <td>3d → 1w → Perm</td>
+        </tr>
+        <tr>
+          <td>NSFW Chatting</td>
+          <td>3d → 1w → Perm</td>
+        </tr>
+        <tr>
+          <td>Discrimination / Slurs</td>
+          <td>3d → 1w → Perm</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Ban Punishments</h2>
+      <table class="punishment-table">
+        <tr>
+          <th>Violation</th>
+          <th>Punishment</th>
+        </tr>
+        <tr>
+          <td>Hacking / Blacklisted Modifications</td>
+          <td>7d → 2w → Perm</td>
+        </tr>
+        <tr>
+          <td>Bug Abusing / Exploits</td>
+          <td>3d → 7d → 14d → 30d → Perm</td>
+        </tr>
+        <tr>
+          <td>DDossing / Doxxing</td>
+          <td>Perm IP Ban</td>
+        </tr>
+        <tr>
+          <td>Duping</td>
+          <td>Perm IP Ban</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Ticket Management</h2>
+      <h3>Ticket Status Colors</h3>
+      <ul>
+        <li>🔴 - Admin / Manager needed</li>
+        <li>🔵 - Dev Needed</li>
+        <li>🟢 - Ticket has been resolved</li>
+        <li>🟡 - Ticket is being dealt with</li>
+      </ul>
+
+      <div class="warning">
+        <p>Important: Do not ping management in tickets unless absolutely necessary. Use #staff-chat for staff
+          discussion.</p>
+      </div>
+
+      <h3>Permissions Note</h3>
+      <p>Sr. Mods and below cannot handle "Billing Support" or "Ban Appeal" tickets. Forward these to higher-ups via
+        #staff-chat.</p>
+    </div>
+  </div>
+</body>
+
+</html>
